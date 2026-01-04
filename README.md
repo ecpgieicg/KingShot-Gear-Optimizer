@@ -8,16 +8,13 @@ The optimizer operates in two phases:
 1. **Forgehammer Optimization**: Determines the most efficient mastery upgrades based on your forgehammer budget and investment priorities
 2. **XP Allocation**: Greedily applies available gear XP to maximize stat gains per XP spent
 
-## Key Features
+## Features
 
-- **Multi-Scenario Scoring**: Evaluates gear value across different game modes (Conquest, Expedition) with customizable scenario weights
-- **Hero-Based Strategy**: Configure per-hero, per-slot investment multipliers (prioritize, normal, or ban specific gear pieces)
-- **Intelligent Forgehammer Planning**: 
-  - Gold-tier filtering with explicit investment whitelist
-  - Efficiency thresholds (absolute or relative to peak)
-  - Mission-aware advice for Alliance Mobilization quests
-- **Flexible Stat Profiles**: Per-hero stat weights with scenario-specific overrides
-- **Loadout Management**: Track hero-gear assignments, fork loadouts, swap gear between heroes
+- **Multiple Scenarios**: Evaluates gear value across different game modes (Conquest, Expedition) with customizable scenario weights
+- **Forgehammer optimization**: Evalutes and suggests an efficient plan of forgehammer use, above a minimum threshold of improvement per hammer used. Also prints out what Alliance Mobilization missions may coincide with the plan. (Currently, events like Alliance Mobilization does not affect the optimization algorithm.)
+- **Gear XP optimization**: Finds an upgrade plan that gives the most improvement for a given amount of gear XP
+- **Hero-Based interface**: Configure per-hero, per-slot investment multipliers (prioritize, normal, or ban specific gear pieces)
+- **Loadout Management**: Track hero-gear assignments, fork loadouts, swap gear between heroes across scenario. e.g. Put archer defense gear on Diana for Arena but keep them on Marlin when leading rallies.
 
 ### Requirements
 

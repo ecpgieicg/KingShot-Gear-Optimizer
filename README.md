@@ -28,9 +28,7 @@ The optimizer operates in two phases:
 
 #### Basic
 
-Modify `create_inventory` so it matches your available gears.
-
-1. For example `make("marlin_helm", "Marlin Gold Arc Helmet", 76, 'Gold', 'Gold_Arc_HB', 1.50),` means archer helmet, labeled as Marlin's, level 76 and Mastery level 5. If you have level 80, change 76 to 80. If you have Mastery 7, change 1.50 to 1.70.
+1. Modify `create_inventory` so it matches your available gears. For example `make("marlin_helm", "Marlin Gold Arc Helmet", 76, 'Gold', 'Gold_Arc_HB', 1.50),` means archer helmet, labeled as Marlin's, level 76 and Mastery level 5. If you have level 80, change 76 to 80. If you have Mastery 7, change 1.50 to 1.70.
 
 2. Update the value of `hammer_budget`. If you have 69 Forgehammers and you are ready to use them, write 69.
 

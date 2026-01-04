@@ -73,10 +73,11 @@ scenarios = [
 
 ## Roadmap
 
-- [ ] Configuration file support (JSON/YAML)
-- [ ] Interactive CLI with prompts
-- [ ] UI for easier gear input and visualization
-- [ ] Import/export functionality for sharing builds
+- [ ] Import gear configuration from screenshots of in-game hero pages
+- [ ] Import available gear XP from screenshots of in-game inventory (<-- stretch goal)
+- [ ] Standalone configuration file
+- [ ] Interactive CLI with prompts to assist custom configuration
+- [ ] UI for easier gear input, weights configuration, loadout configurations, etc and for better visualization
 
 ## Technical Details
 
@@ -89,7 +90,7 @@ scenarios = [
 
 **XP Phase**:
 - Greedy selection based on `weighted_stats_per_level / xp_to_apply`
-- Applies XP in multiples of 10 (game rule)
+- Applies gear XP based on in-game XP requirements at the specific levels.
 - Tracks partial XP for next level
 
 ## License

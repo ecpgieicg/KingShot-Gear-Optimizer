@@ -1,6 +1,6 @@
 # KingShot Gear Optimizer
 
-A sophisticated gear upgrade optimizer for KingShot that uses multi-stage greedy algorithms to maximize stat efficiency across multiple game scenarios.
+A gear upgrade optimizer for KingShot that uses multi-stage greedy algorithms to maximize stat efficiency across multiple game scenarios.
 
 ## Overview
 
@@ -19,18 +19,26 @@ The optimizer operates in two phases:
 - **Flexible Stat Profiles**: Per-hero stat weights with scenario-specific overrides
 - **Loadout Management**: Track hero-gear assignments, fork loadouts, swap gear between heroes
 
-## Current Interface
-
-**Command-line Python script** - Users configure their gear inventory and preferences directly in the script file.
-
-`Python KingShot_gear_optimizer.py`
-
 ### Requirements
 
 - Python 3.7+
 - Standard library only (no external dependencies)
 
-### Basic Usage
+### Usage
+
+#### Basic
+
+Modify `create_inventory` so it matches your available gears.
+
+1. For example `make("marlin_helm", "Marlin Gold Arc Helmet", 76, 'Gold', 'Gold_Arc_HB', 1.50),` means archer helmet, labeled as Marlin's, level 76 and Mastery level 5. If you have level 80, change 76 to 80. If you have Mastery 7, change 1.50 to 1.70.
+
+2. Update the value of `hammer_budget`. If you have 69 Forgehammers and you are ready to use them, write 69.
+
+3. Update the value of `xp_budget` for the amount of free gear XP you have in your inventory. If you are unsure, enter a number like 3000 to see a few upgrades at a time.
+
+4. Run: `python KingShot_gear_optimizer.py`
+
+#### Advanced
 
 1. Clone the repository
 2. Edit `KingShot_gear_optimizer.py` to configure:
